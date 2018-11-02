@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from tkinter import *
 
 window = Tk()
@@ -72,7 +73,7 @@ def multiply():
 def divide():
     st = text_field.get() + "/"
     str_var.set(st)
-    
+
 # answer or equals
 def equals():
     st = text_field.get() + " "
@@ -100,7 +101,7 @@ def equals():
             answer = numbers[i] * numbers[i + 1]
             numbers.remove(numbers[i])
             numbers.remove(numbers[i])
-            numbers.insert(0, answer)
+            numbers.insert(i, answer)
             actions.remove(actions[i])
             len_actions -= 1 
             i -= 1
@@ -109,7 +110,7 @@ def equals():
             answer = numbers[i] / numbers[i + 1]
             numbers.remove(numbers[i])
             numbers.remove(numbers[i])
-            numbers.insert(0, answer)
+            numbers.insert(i, answer)
             actions.remove(actions[i])
             len_actions -= 1 
             i -= 1
