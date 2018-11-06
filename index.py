@@ -97,7 +97,6 @@ def equals():
     i = 0
     while i < len_actions:
         if actions[i] == "*":
-            print(i)
             answer = numbers[i] * numbers[i + 1]
             numbers.remove(numbers[i])
             numbers.remove(numbers[i])
@@ -106,7 +105,6 @@ def equals():
             len_actions -= 1 
             i -= 1
         elif actions[i] == "/":
-            print(i)
             answer = numbers[i] / numbers[i + 1]
             numbers.remove(numbers[i])
             numbers.remove(numbers[i])
@@ -114,8 +112,6 @@ def equals():
             actions.remove(actions[i])
             len_actions -= 1 
             i -= 1
-        print(*actions)
-        print(*numbers)
         i += 1
 
     j = 0
