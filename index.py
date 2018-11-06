@@ -135,9 +135,6 @@ def equals():
             actions.remove(actions[j])
             len_actions -= 1 
             j -= 1
-
-        print(*actions)
-        print(*numbers)
         j += 1
             
 
